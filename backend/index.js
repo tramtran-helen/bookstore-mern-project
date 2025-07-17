@@ -10,15 +10,7 @@ const app = express()
 
 //Middleware
 app.use(express.json()) //convert the data in the body of the client's request into JS object to use
-app.use(
-  cors(
-    {
-      origin: 'http://localhost:5555',
-      methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      allowedHeaders: ['Content-Type'],
-    }
-  )
-)
+app.use(cors())
 
 
 
