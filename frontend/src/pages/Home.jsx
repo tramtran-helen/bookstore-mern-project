@@ -35,7 +35,7 @@ const Home = () => {
 
 
     return (
-    <div className="p-6">
+    <div className="p-6 min-h-screen bg-gradient-to-b from-sky-50 via-teal-50 to-sky-50">
         <div className="flex justify-center items-center gap-x-4 mt-10">
             <h1 className="text-4xl my-6 font-semibold text-gray-800">Tram's Book List</h1>
             <Link to="/books/create">
@@ -63,7 +63,7 @@ const Home = () => {
 
                 
                 <tbody> 
-                    {books.map((book, index) => (//loop through books array & for each book create 1 <td>
+                    {books.map((book, index) => (//loop through books array & for each book create 1 <tr>
                         <tr key={book._id} className="hover:bg-blue-50">
                             <td className="px-4 py-2 border border-blue-200">{index + 1}</td>
                             <td className="px-4 py-2 border border-blue-200">{book.title}</td>
