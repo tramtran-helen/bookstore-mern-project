@@ -28,10 +28,10 @@ const ShowBook = () => {
     return(
         <div className='min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-sky-100 p-6'>
             <BackButton />
-            <h1 className='text-4xl font-semibold text-center text-gray-800 my-8'>Show Tram's Book</h1>
+            <h1 className='text-4xl font-semibold text-center text-gray-800 my-8'>Show Tram's Book Details</h1>
             {loading ? (
         <div className="flex justify-center items-center min-h-[200px]">
-          <Spinner />
+            <Spinner />
         </div>
       ) : (
         <div className="flex justify-center items-center">
