@@ -35,7 +35,7 @@ const EditBook = () => {
 
 
 
-    const handleSaveBook = () => {
+    const handleUpdateBook = () => {
         const data = {
             title,
             author,
@@ -43,7 +43,7 @@ const EditBook = () => {
         }
         setLoading(true)
         axios
-            .post('http://localhost:5555/books', data)
+            .put(`http://localhost:5555/books/${id}`, data)
             .then(() => {
                 setLoading(false)
                 navigate('/')
@@ -97,7 +97,7 @@ const EditBook = () => {
               />
             </div>
             <button
-              onClick={handleSaveBook}
+              onClick={handleUpdateBook}
               className='w-full bg-blue-300 hover:bg-blue-500 text-white font-semibold py-2 rounded-md shadow transition duration-200'
             >
               Save
