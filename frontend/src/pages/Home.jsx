@@ -46,7 +46,9 @@ const Home = () => {
 
 
         {loading ? (
+        <div className="fixed inset-0 flex justify-center items-center bg-white/80 z-5">
             <Spinner />
+        </div>
         ) : ( //table headers with blue background, th: things in the header cells
         <div className="overflow-x-auto mt-6">
             <table className="min-w-full border border-blue-400 rounded-md overflow-hidden">
