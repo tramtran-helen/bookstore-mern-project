@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom'
 
 
 
+
+
+/*React function component*/
 const CreateBooks = () => {
     const [title, setTitle] = useState('')
     const [author, setAuthor] = useState('')

@@ -5,6 +5,10 @@ import BackButton from '../components/BackButton.jsx'
 import Spinner from '../components/Spinner.jsx'
 
 
+
+
+
+/*React function component*/
 const ShowBook = () => {
     const [book, setBook] = useState({})
     const [loading, setLoading] = useState(false)

@@ -8,6 +8,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 
 
 
+/*React function component*/
 const EditBook = () => {
     const [title, setTitle] = useState('')
     const [author, setAuthor] = useState('')
